@@ -1,8 +1,8 @@
-.contenedor {width: 50%; margin-left: 20%; margin-top: 5%; border: 1px solid rgba(0,0,0,0.6);}
+.contenedor {width: 50%; margin-left: 20%; margin-top: 5%; border: 1px solid #383961;}
 
-h1 {font-size: 30px; font-family: sans-serif; text-align: center;}
+h1 {font-size: 30px; font-family: sans-serif; text-align: center; color: #383961;}
 
-.loading {font-size: 20px; text-align: center; margin-bottom: 26%; font-family: sans-serif;}
+.loading {font-size: 20px; text-align: center; margin-bottom: 26%; font-family: sans-serif; color: #DB162F;}
 
 ul {width: 85%; text-align: center; list-style: none;}
 

@@ -26,10 +26,10 @@ function mayorDeEdad(usuario) {
     return usuario.age >= 18;
 }
 
-// Mostrar elementos filtrados y ordenados, desplegados
-mayoresOrdenados.forEach(function(usuario){
-    document.getElementById("resultados").innerHTML = usuarios;
-})
+// // Mostrar elementos filtrados y ordenados, desplegados
+// mayoresOrdenados.forEach(function(usuario){
+//     console.log(usuarios);
+// })
 
 
 // Promesa que devuelve primero a todos los usuarios, y después sólo a los mayores de edad ordenados alfabéticamente, simulando asincronía de 2 segundos.  
@@ -38,18 +38,18 @@ function mostrarUsuarios (numero, arreglo) {
         if (numero === 1) {
             resolve(arreglo) 
         } else {
-            reject(new Error("Ese no es un 1"))
+            reject(new Error("El valor ingresado no es 1"))
         }
     })
     return promise
 }
 
-mostrarUsuarios(10, usuarios)
+mostrarUsuarios(1, usuarios)
 .then(function(resultado){
-        console.log("Usuarios", usuarios)
+        console.log("Total de usuarios", usuarios)
     }).then(function(resultadoDos){
         setTimeout(function(){
-            console.log("El valor ingresado no es 1", mayoresOrdenados)
+            console.log("Usuarios mayores y ordenados alfabéticamente", mayoresOrdenados)
         }, 2000)
     })
     
