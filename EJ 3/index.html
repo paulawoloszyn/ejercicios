@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+        // La función no devuelve nada porque getName() no fue llamada, y name no fue declarado.  
+
+        // function getName() {
+        //     return(this.name);
+        // }
+
+        // Se podría cambiar el scope para que el valor de name sea 'Paula':
+        function getName() {
+            return(this.name);
+        }
+
+        var name = "Paula";
+
+        getName();
+       
+    </script>
+</body>
+</html>
